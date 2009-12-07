@@ -1,0 +1,23 @@
+<mtapp:setting
+    id="akamai_username"
+    label="<__trans phrase="Akamai Username">"
+    hint="<__trans phrase="The Akamai username you want to use for initiating purge requests.">"
+    show_hint="1">
+    <input type="text" name="akamai_username" id="akamai_username" value="<mt:if name="akamai_username"><mt:var name="akamai_username"></mt:if>" />
+</mtapp:setting>
+
+<mtapp:setting
+    id="akamai_password"
+    label="<__trans phrase="Akamai Password">"
+    hint="<__trans phrase="The password associated with the Akamai username above.">"
+    show_hint="1">
+    <input type="password" name="akamai_password" id="akamai_password" value="<mt:if name="akamai_password"><mt:var name="akamai_password"></mt:if>" />
+</mtapp:setting>
+
+<mtapp:setting
+    id="notification_email"
+    label="<__trans phrase="Notification Email">"
+    hint="<__trans phrase="The email address Akamai should use for purge completion notices.">"
+    show_hint="1">
+    <input type="text" name="notification_email" id="notification_email" value="<mt:if name="notification_email"><mt:var name="notification_email"></mt:if>" />
+</mtapp:setting>
